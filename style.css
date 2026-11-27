@@ -108,6 +108,9 @@ h1{background:none;-webkit-background-clip:border-box;color:#fff}
 .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:#ff8a2b;box-shadow:0 0 0 3px rgba(255,138,43,.22)}
 .fld .err{display:none;font-style:normal;font-size:.78rem;color:#ff6b6b}
 .fld.bad input{border-color:#ff6b6b;box-shadow:0 0 0 3px rgba(255,107,107,.15)}.fld.bad .err{display:block}
+.consent{display:flex;align-items:flex-start;gap:10px;margin-top:18px;font-size:.85rem;color:rgba(255,255,255,.8);cursor:pointer;text-align:start}
+.consent input{margin-top:3px;accent-color:#ff8a2b;width:16px;height:16px;flex:none}
+.lead-form .note a{color:var(--acc2);text-decoration:underline}
 .lead-form .submit{margin-top:22px;width:100%;border:0;cursor:pointer;justify-content:center}
 .lead-form .note{margin:12px 0 0;font-size:.82rem;opacity:.65;text-align:center}
 .thanks{text-align:center}.thanks .check{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;background:linear-gradient(135deg,#ff8a2b,#ff5a00);color:#fff;font-size:2rem;display:grid;place-items:center;box-shadow:0 0 40px rgba(255,122,26,.5);animation:pop .5s cubic-bezier(.2,.9,.3,1.3)}
