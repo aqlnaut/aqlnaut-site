@@ -119,15 +119,30 @@
     <a class="btn primary" id="wa" href="#" data-i18n="wa">تواصل عبر واتساب</a>
     <a class="btn ghost" id="fb" href="#" data-i18n="fbl">صفحتنا على فيسبوك</a>
   </div>
-  <form id="lead" class="lead-form reveal" autocomplete="on">
+  <div class="lead-wrap reveal">
+  <form id="lead" class="lead-form" novalidate autocomplete="on">
     <h3 data-i18n="form_t">سجّل اهتمامك</h3>
-    <div class="row"><input name="name" required placeholder="الاسم" data-ph="ph_name"><input name="venue" required placeholder="اسم المكان" data-ph="ph_venue"></div>
-    <div class="row"><input name="phone" type="tel" required placeholder="رقم الهاتف" data-ph="ph_phone"><input name="city" placeholder="المدينة" data-ph="ph_city"></div>
-    <select name="type" data-i18n-sel="1"><option value="كافيه" data-o="o1">كافيه</option><option value="مطعم" data-o="o2">مطعم</option><option value="كافيه ومطعم" data-o="o3">كافيه ومطعم</option><option value="إعلان" data-o="o5">إعلان</option><option value="أخرى" data-o="o4">أخرى</option></select>
-    <textarea name="msg" rows="2" placeholder="رسالتك (اختياري)" data-ph="ph_msg"></textarea>
-    <button class="btn primary" type="submit" data-i18n="form_b">أرسل الطلب</button>
+    <p class="form-sub" data-i18n="form_s">املأ البيانات وسنتواصل معك لتجهيز عرض تجريبي يناسب مكانك.</p>
+    <div class="grid">
+      <label class="fld"><span data-i18n="l_name">اسم المسؤول</span><input name="name" required autocomplete="name"><em class="err" data-i18n="e_req">هذا الحقل مطلوب</em></label>
+      <label class="fld"><span data-i18n="l_phone">رقم الهاتف</span><input name="phone" type="tel" inputmode="tel" dir="ltr" placeholder="01XXXXXXXXX" autocomplete="tel"><em class="err" data-i18n="e_phone">أدخل رقم هاتف مصري صحيحًا</em></label>
+      <label class="fld"><span data-i18n="l_venue">اسم المكان</span><input name="venue" required><em class="err" data-i18n="e_req">هذا الحقل مطلوب</em></label>
+      <label class="fld"><span data-i18n="l_type">نوع النشاط</span><select name="type"><option value="كافيه" data-o="o1">كافيه</option><option value="مطعم" data-o="o2">مطعم</option><option value="كافيه ومطعم" data-o="o3">كافيه ومطعم</option><option value="إعلان" data-o="o5">إعلان</option><option value="أخرى" data-o="o4">أخرى</option></select></label>
+      <label class="fld"><span data-i18n="l_branches">عدد الفروع</span><select name="branches"><option value="1">1</option><option value="2-3">2 - 3</option><option value="4+">4+</option></select></label>
+      <label class="fld"><span data-i18n="l_city">المدينة</span><input name="city" required autocomplete="address-level2"><em class="err" data-i18n="e_req">هذا الحقل مطلوب</em></label>
+    </div>
+    <label class="fld full"><span data-i18n="l_msg">ملاحظات (اختياري)</span><textarea name="msg" rows="3"></textarea></label>
+    <button class="btn primary submit" type="submit"><span data-i18n="form_b">أرسل الطلب</span></button>
     <p class="note" data-i18n="form_n">سيفتح واتساب برسالة جاهزة بتفاصيلك لتأكيد الإرسال.</p>
   </form>
+  <div id="thanks" class="thanks" hidden>
+    <div class="check">✓</div>
+    <h3 data-i18n="th_t">تم تجهيز طلبك</h3>
+    <p data-i18n="th_d">اضغط الزر أدناه لفتح واتساب وتأكيد الإرسال. سنرد عليك في أقرب وقت.</p>
+    <a class="btn primary" id="thwa" href="#" data-i18n="th_b">افتح واتساب</a>
+    <button class="btn ghost" id="again" type="button" data-i18n="th_a">طلب جديد</button>
+  </div>
+  </div>
   <p class="center reveal" id="mailrow" hidden><a id="mail" href="#"></a></p>
 
 </section>
