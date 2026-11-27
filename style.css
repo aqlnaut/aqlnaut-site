@@ -122,3 +122,19 @@ h1{background:none;-webkit-background-clip:border-box;color:#fff}
 [hidden]{display:none!important}
 .adv-d{max-width:640px;margin:16px auto 28px}
 .plan .ask{margin-top:18px;display:inline-block;color:#111;border-color:rgba(0,0,0,.25)}.plan h3{font-size:1.3rem}
+
+.foot{display:block!important;padding:40px 6vw 22px!important}
+.foot-in{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto}
+.foot-brand img{height:26px;display:block}.foot-brand p{margin:10px 0 0;font-size:.85rem;opacity:.6;max-width:320px}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}.foot-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.92rem;transition:color .2s}.foot-links a:hover{color:#ff8a2b}
+.social{display:flex;gap:10px}.social a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;color:rgba(255,255,255,.8);transition:all .25s}
+.social a:hover{color:#fff;border-color:#ff8a2b;background:rgba(255,138,43,.15);transform:translateY(-3px)}.social svg{width:19px;height:19px}
+.foot-bot{max-width:1200px;margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:.8rem;opacity:.55;text-align:center}
+.legal{max-width:760px;margin:0 auto;padding:110px 24px 60px;color:#111;line-height:1.9}
+.legal h1{font-size:2rem;margin:0 0 6px}.legal h2{font-size:1.2rem;margin:28px 0 6px}.legal .upd{opacity:.6;font-size:.9rem}
+.legal .draft{background:#fff5e8;border:1px solid #ffd2a1;border-radius:12px;padding:12px 16px;margin:18px 0;font-size:.9rem}
+.legal a{color:#e8650a}.legal-top{position:fixed;top:0;left:0;right:0;background:#000;padding:14px 6vw;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.legal-top img{height:24px}.legal-top a,.legal-top button{color:#fff;text-decoration:none;font-size:.9rem;background:none;border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 14px;cursor:pointer;font-family:inherit}
+body.legalpage{background:#fff}
+.legal h1,.legal h2{color:#111!important;-webkit-text-fill-color:#111!important;background:none!important;opacity:1!important;animation:none!important;text-align:start;letter-spacing:0}
+#mailrow a{color:#ffb067;text-decoration:none;border-bottom:1px solid rgba(255,176,103,.4);font-size:1.05rem}
